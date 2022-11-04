@@ -137,7 +137,7 @@
 \vspace{-4pt}
 \resumeSubheading
   {中南大学}{长沙, 湖南}
-  {信息安全专业学士在读}{2019.9 - 2023.6}
+  {信息安全学士在读}{2019.9 - 2023.6}
   \resumeItemListStart
     \resumeItem{课程}
       {线性代数，概率与统计，计算机网络，编译器原理，操作系统与安全，
@@ -154,29 +154,29 @@
       {软件开发工程师 @ 高斯实验室}{ 2022.7 - 现在}
       \resumeItemListStart
       	\resumeItem{内核裁剪}
-		{数据库内核的裁剪和开发，通过将数据库运行内存占用率裁剪到原来的 10\%，解决了特殊情况下内存不足的问题。}
+		{独立负责数据库内核的裁剪，预研小内存场景下的数据库内核，将数据库由分布式裁剪为单体式，裁剪和优化多个模块，将内存占用率裁剪至原来的 10\%（由 1.6 GB 裁剪至 200 MB）。}
 		\resumeItem{调研分享}
-        {西安基地高斯部唯一同时向四个项目负责人做了项目演示和主题演讲的软件开发工程师实习生。}
+        {唯一同时向四个项目负责人做了项目演示，和 CCEH 论文调研成果分享的组内实习生。}
       \resumeItemListEnd
           
     \resumeSubheading
       {Open Source Promotion Plan - ShardingSphere}{远程}
-      {学生开发者}{ 2022.7 - 现在}
+      {学生开发者}{ 2022.7 - 2022.10}
       \resumeItemListStart
-        \resumeItem{开发}
-          {设计了一个测试引擎，从 MySQL 和 PostgreSQL 动态加载超过 100,000 个 SQL 案例，并在 1 分钟内完成 SQL 解析器的参数化测试，并在远程集成测试，在本地也可以进行手动测试。}
+        \resumeItem{测试引擎}
+          {设计了一个 SQL 解析的动态测试引擎，从 MySQL 和 PostgreSQL 加载超过 110,000 个 SQL 测试样例，并在 1 分钟内完成 SQL 解析器的参数化测试，可以由 GitHub Action 远程测试，在本地也可以进行手动测试。}
         \resumeItem{优化}
-          {将测试覆盖率报告从 Travis 迁移到 GitHub Action，并将CI时间至少减少 3-5 分钟。}
+          {将测试覆盖率报告从 Travis 迁移到 GitHub Action，使 CI 时间至少节约了 3-5 分钟。}
       \resumeItemListEnd
     
     \resumeSubheading
-      {Cloud Native Computing Foundation - Glossary}{远程}
-      {中文社区的联合创始人 \& 项目 Approver}{2022.2 - 现在}
+      {CloudWeGO - Netpoll}{远程}
+      {杰出贡献者}{2022.7 - 2022.9}
       \resumeItemListStart
-      	\resumeItem{开发 \& 维护}
-		{负责 Glossary 的中文版本发布，截至目前已更新 50 个词汇。代表中文社区在 4 月份的 Glossary 工作组会议上发言。}
-		\resumeItem{协作}
-         {与其他创始人密切协调，进行 Glossary 工作组的建设。}
+      	\resumeItem{设计 SDK }
+		{设计了一个纯 Golang 版本 (没有 CGO) 的高性能 io\_uring I/O poller 的 SDK，采用共享内存的方案，通过设计 Submit 、 Complete 队列和内存屏障，实现了异步 I/O。}
+		\resumeItem{性能}
+         {与 epoll 相比，SDK 性能大约提升了 3 倍，并使用 io\_uring 实现了轮询器的默认 POLL 模式。}
       \resumeItemListEnd
 
       
@@ -188,10 +188,10 @@
 \resumeSubHeadingListStart 
    
          
-   \resumeSubheadingCompact{CloudWeGo - Netpoll}{ 2022.7 - 2022.9}{远程开发}
+   \resumeSubheadingCompact{车辆重识别防御系统}{ 2020.11 - 2021.11}{学生研究助理，中南大学}
    \resumeItemListStart
-        \resumeItemSingle{设计了一个纯 Golang 版本 (没有 CGO) 的高性能 io\_uring I/O poller 的 SDK。}
-        \resumeItemSingle{与 epoll 相比，大约改进了 3 倍，使用 io\_uring 实现了轮询器的默认 POLL 模式。}
+        \resumeItemSingle{参与构建基于 Transformer 的车辆重识别防御系统的特征提取和相关测试，并通过 Python 独立设计和实现 GLOM 设想。}
+        \resumeItemSingle{每 2 周在小组里报告 2 篇论文，并对神经网络的可解释性进行了独立研究。}
     \resumeItemListEnd
 \vspace{-4pt}
    \resumeSubheadingCompact{RoboCup China Open 2D Soccer Simulation}{2021.5 -  2021.9}
@@ -218,7 +218,7 @@
 \section{活动 \& 奖项}
     
         \resumeItem{奖项}{获得国家级奖项2项（RoboCup中国2D足球模拟公开赛二等奖、2021年大学生创新创业大赛优秀结题），省级奖项3项（第十四届 ``挑战杯"大学生竞赛二等奖、第七届 ``互联网+"建行杯大学生竞赛二等奖、第十五届 ``升华杯 "大学生竞赛特等奖），校级奖项若干等。}
-        \resumeItem{组织 \& 活动}{苹果实验室会长负责技术指导；计算机系年级长负责年级事务；代表学校协办了Ubuntu Kylin开源沙龙和线下发布会。}
+        \resumeItem{组织 \& 活动}{苹果实验室会长负责 Tech Talk；计算机学院年级长负责年级事务；代表学校协办了Ubuntu Kylin 开源沙龙和线下发布会。}
         
 \vspace{-4pt}
 %-----------STATS-----------------
