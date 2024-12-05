@@ -129,12 +129,12 @@
   \textbf{LinkedIn:} \href{https://www.linkedin.cn/incareer/in/junfeng-yu-578456248}{https://www.linkedin.com/in/jacob953/} |
   \textbf{Mobile:} +86 155 8521 0953}
 \end{tabular*}
-\vspace{-10pt}
-\vspace{-4pt}
+% \vspace{-10pt}
+% \vspace{-4pt}
 %-----------Education Background-----------------
-\vspace{-1pt}
+% \vspace{-1pt}
 \section{教育背景}
-\vspace{-4pt}
+% \vspace{-4pt}
 \resumeSubheading
   {中南大学}{长沙, 湖南}
   {信息安全学士在读}{2019.9 - 2023.6}
@@ -144,24 +144,76 @@
 数据库原理、分布式系统与云计算、网络安全等。}
   \resumeItemListEnd
 
-\vspace{-4pt}
+% \vspace{-4pt}
 %-----------Professional Experience-----------------
 \section{专业经历}
   \resumeSubHeadingListStart
       
     \resumeSubheading
+      {腾讯 - NoSQL}{成都}
+      {研发工程师 @ 向量数据库}{ 2023.11 - 现在}
+      \resumeItemListStart
+      	\resumeItem{0-1-5-10 质量项目}
+		{针对 7 种异常场景进行主动发现，能做出 23 种根因诊断，累计发现 175w 次，并配合诊断系统收敛至 1.5w 次，有效收敛率高达 99.1\%，并多次先于客户排查出根因，主动联系进行优化与调整，强化用户对产品的信任，以及发现了一些框架内部的潜在问题，保障项目质量的稳步迭代。}
+      	\resumeItem{白屏化运维系统}
+		{极大缩短了值班人员运营数据和运维操作的时间成本和沟通成本，通过质量大盘和实例管理将全地域问题事件级别的界面可视化，及其对应事件的诊断路由详情，并统一了各个中间件平台的入口，极大降低了问题排查的时间成本和沟通成本，同时，方便进行数据下钻，将深层数据进行日推同步。}
+      	\resumeItem{PDF 解析算法}
+		{自研算法通过工程能力实现 PDF 文件解析，覆盖绝大部分解析场景，包括图文解析、超小标题识别、表格跨页合并、段落跨页合并和多栏解析等，并将性能提升至接近原来的 1.5 倍，在串行解析模式下，平均每页解析耗时不超过 200 ms，大幅度提升了数据清洗和用户召回效果。}
+      	\resumeItem{数据管道}
+		{设计数据管道整体架构，面向异构数据源，可以无痛扩展不同的数据库类型和数据存储类型，并且能够满足未来流批一体的形态；主动搭建项目启动框架（服务启动、HealthCheck、预启动等），开发各种通用组件（任务状态机、日志组件等），帮助其他团队成员聚焦于业务开发。}
+      \resumeItemListEnd
+      
+    \resumeSubheading
       {华为 - 2012 实验室}{西安}
-      {软件开发工程师 @ 高斯实验室}{ 2022.7 - 现在}
+      {软件开发工程师 @ 高斯实验室}{ 2022.7 - 2022.11}
       \resumeItemListStart
       	\resumeItem{内核裁剪}
 		{独立负责数据库内核的裁剪，预研小内存场景下的数据库内核，将数据库由分布式裁剪为单体式，裁剪和优化多个模块，将内存占用率裁剪至原来的 10\%（由 1.6 GB 裁剪至 200 MB）。}
 		\resumeItem{调研分享}
         {唯一同时向四个项目负责人做了项目演示，和 CCEH 论文调研成果分享的组内实习生。}
       \resumeItemListEnd
-          
+      
+  %   \resumeSubheading
+  %     {Open Source Promotion Plan - ShardingSphere}{远程}
+  %     {学生开发者}{ 2022.7 - 2022.10}
+  %     \resumeItemListStart
+  %       \resumeItem{测试引擎}
+  %         {设计了一个 SQL 解析的动态测试引擎，从 MySQL 和 PostgreSQL 加载超过 110,000 个 SQL 测试样例，并在 1 分钟内完成 SQL 解析器的参数化测试，可以由 GitHub Action 远程测试，在本地也可以进行手动测试。}
+  %       \resumeItem{优化}
+  %         {将测试覆盖率报告从 Travis 迁移到 GitHub Action，使 CI 时间至少节约了 3-5 分钟。}
+  %     \resumeItemListEnd
+    
+  %   \resumeSubheading
+  %     {CloudWeGO - Netpoll}{远程}
+  %     {杰出贡献者}{2022.7 - 2022.9}
+  %     \resumeItemListStart
+  %     	\resumeItem{设计 SDK }
+		% {设计了一个纯 Golang 版本 (没有 CGO) 的高性能 io\_uring I/O poller 的 SDK，采用共享内存的方案，通过设计 Submit 、 Complete 队列和内存屏障，实现了异步 I/O。}
+		% \resumeItem{性能}
+  %        {与 epoll 相比，SDK 性能大约提升了 3 倍，并使用 io\_uring 实现了轮询器的默认 POLL 模式。}
+  %     \resumeItemListEnd
+
+      
+  \resumeSubHeadingListEnd
+  
+% \vspace{-8pt}
+%-----------Projects-----------------
+\section{项目经历}
+\resumeSubHeadingListStart 
+
+    \resumeSubheading
+      {Tencent - Behavior3Gen}{成都}
+      {项目维护人}{ 2024.11 - 现在}
+      \resumeItemListStart
+      	\resumeItem{设计 \& 实现}
+		{开发 Behavior3 低代码平台规则引擎的二次开发工具，通过生成 .b3 文件简化节点的定制化开发负担，可以在静态编译阶段对服务启动 Panic 进行预防，并对个性化节点进行管理。}
+		\resumeItem{内部分享}
+        {在内网 KM 平台发表文章《Behavior3Gen：友好安全的 Behavior3 框架二次开发生成工具》被收录，并登上首页推荐。}
+      \resumeItemListEnd
+
     \resumeSubheading
       {Open Source Promotion Plan - ShardingSphere}{远程}
-      {学生开发者}{ 2022.7 - 2022.10}
+      {社区开发者}{ 2022.7 - 2022.10}
       \resumeItemListStart
         \resumeItem{测试引擎}
           {设计了一个 SQL 解析的动态测试引擎，从 MySQL 和 PostgreSQL 加载超过 110,000 个 SQL 测试样例，并在 1 分钟内完成 SQL 解析器的参数化测试，可以由 GitHub Action 远程测试，在本地也可以进行手动测试。}
@@ -179,48 +231,40 @@
          {与 epoll 相比，SDK 性能大约提升了 3 倍，并使用 io\_uring 实现了轮询器的默认 POLL 模式。}
       \resumeItemListEnd
 
-      
-  \resumeSubHeadingListEnd
-  
-\vspace{-8pt}
-%-----------Projects-----------------
-\section{项目经历}
-\resumeSubHeadingListStart 
-   
-         
-   \resumeSubheadingCompact{车辆重识别防御系统}{ 2020.11 - 2021.11}{学生研究助理，中南大学}
-   \resumeItemListStart
-        \resumeItemSingle{参与构建基于 Transformer 的车辆重识别防御系统的特征提取和相关测试，并通过 Python 独立设计和实现 GLOM 设想。}
-        \resumeItemSingle{每 2 周在小组里报告 2 篇论文，并对神经网络的可解释性进行了独立研究。}
-    \resumeItemListEnd
-\vspace{-4pt}
-   \resumeSubheadingCompact{RoboCup China Open 2D Soccer Simulation}{2021.5 -  2021.9}
-   {云麓校队队长, 中南大学}
-      \resumeItemListStart
-        \resumeItemSingle{结合模糊控制与强化学习，通过简化数学模型的设计，使控制机制和策略得到优化，优化后的射门命中率提升了21.36\%。}
-        \resumeItemSingle{带领 CSU\_YUNLU 于 RoboCup China Open 2D Soccer Simulation 获得国家二等奖，并以第一作者于 ICRAIC 2021 发表论文。}
-      \resumeItemListEnd
+%    \resumeSubheadingCompact{车辆重识别防御系统}{ 2020.11 - 2021.11}{学生研究助理，中南大学}
+%    \resumeItemListStart
+%         \resumeItemSingle{参与构建基于 Transformer 的车辆重识别防御系统的特征提取和相关测试，并通过 Python 独立设计和实现 GLOM 设想。}
+%         \resumeItemSingle{每 2 周在小组里报告 2 篇论文，并对神经网络的可解释性进行了独立研究。}
+%     \resumeItemListEnd
+% \vspace{-4pt}
+
+%    \resumeSubheadingCompact{RoboCup China Open 2D Soccer Simulation}{2021.5 -  2021.9}
+%    {云麓校队队长, 中南大学}
+%       \resumeItemListStart
+%         \resumeItemSingle{结合模糊控制与强化学习，通过简化数学模型的设计，使控制机制和策略得到优化，优化后的射门命中率提升了21.36\%。}
+%         \resumeItemSingle{带领 CSU\_YUNLU 于 RoboCup China Open 2D Soccer Simulation 获得国家二等奖，并以第一作者于 ICRAIC 2021 发表论文。}
+%       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
  
-\vspace{-8pt}
+% \vspace{-8pt}
 %-----------Publication & Patents-----------------
-\section{论文发表 \& 书籍出版}
+% \section{论文发表 \& 书籍出版}
 
-    \resumeItem{}{\textbf{J., Yu}, Q., Zhao and W., Zhuang et al., "Decision and Evaluation of Ordering and Transshipment Schemes Based on Multi-objective Programming," 2021 5th Annual International Conference on Data Science and Business Analytics (ICDSBA), 2021, pp. 474-478, doi: 10.1109/ICDSBA53075.2021.00097.}
+%     \resumeItem{}{\textbf{J., Yu}, Q., Zhao and W., Zhuang et al., "Decision and Evaluation of Ordering and Transshipment Schemes Based on Multi-objective Programming," 2021 5th Annual International Conference on Data Science and Business Analytics (ICDSBA), 2021, pp. 474-478, doi: 10.1109/ICDSBA53075.2021.00097.}
     
-    \resumeItem{}{\textbf{Junfeng Yu} et al., "The Research of RoboCup2D Player Shooting Technique Based on Fuzzy Control," International Conference on Robotics Automation and Intelligent Control (ICRAIC 2021), 2022 J. Phys.: Conf. Ser. 2203 012059.}
+%     \resumeItem{}{\textbf{Junfeng Yu} et al., "The Research of RoboCup2D Player Shooting Technique Based on Fuzzy Control," International Conference on Robotics Automation and Intelligent Control (ICRAIC 2021), 2022 J. Phys.: Conf. Ser. 2203 012059.}
     
-    \resumeItem{}{\textbf{J., Yu}, (2022). \textit{Go 鲜为人知的角落}. Beijing: 图灵出版社(审核中)}
+%     \resumeItem{}{\textbf{J., Yu}, (2022). \textit{Go 鲜为人知的角落}. Beijing: 图灵出版社(审核中)}
     
-\vspace{-5pt}
+% \vspace{-5pt}
 %--------CONFERENCES & SERVICES------------
-\section{活动 \& 奖项}
+% \section{活动 \& 奖项}
     
-        \resumeItem{奖项}{获得国家级奖项2项（RoboCup中国2D足球模拟公开赛二等奖、2021年大学生创新创业大赛优秀结题），省级奖项3项（第十四届 ``挑战杯"大学生竞赛二等奖、第七届 ``互联网+"建行杯大学生竞赛二等奖、第十五届 ``升华杯 "大学生竞赛特等奖），校级奖项若干等。}
-        \resumeItem{组织 \& 活动}{苹果实验室会长负责 Tech Talk；计算机学院年级长负责年级事务；代表学校协办了Ubuntu Kylin 开源沙龙和线下发布会。}
+%         \resumeItem{奖项}{获得国家级奖项2项（RoboCup中国2D足球模拟公开赛二等奖、2021年大学生创新创业大赛优秀结题），省级奖项3项（第十四届 ``挑战杯"大学生竞赛二等奖、第七届 ``互联网+"建行杯大学生竞赛二等奖、第十五届 ``升华杯 "大学生竞赛特等奖），校级奖项若干等。}
+%         \resumeItem{组织 \& 活动}{苹果实验室会长负责 Tech Talk；计算机学院年级长负责年级事务；代表学校协办了Ubuntu Kylin 开源沙龙和线下发布会。}
         
-\vspace{-4pt}
+% \vspace{-4pt}
 %-----------STATS-----------------
 \section{专业技能}
   	\resumeItem
@@ -233,24 +277,3 @@
 
 %-------------------------------------------
 \end{document}
-
-func permute(nums []int) [][]int {
-	res := make([][]int, 0)
-	var dfs func(in, out []int)
-	dfs = func(in, out []int) {
-		if len(in) == 0 {
-			res = append(res, out)
-			return
-		}
-		for idx := range in {
-			add := append(out, in[idx])
-			left := in[:idx]
-			if idx < len(in)-1 {
-				left = append(left, in[idx+1:]...)
-			}
-			dfs(left, add)
-		}
-	}
-	dfs(nums, []int{})
-	return res
-}
